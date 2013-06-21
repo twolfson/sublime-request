@@ -1,4 +1,4 @@
-# sublime-request
+# sublime-request [![Donate on Gittip](http://badgr.co/gittip/twolfson.png)](https://www.gittip.com/twolfson/)
 
 Make HTTP requests from [Sublime Text 2][subl].
 
