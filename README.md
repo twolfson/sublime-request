@@ -8,7 +8,7 @@ Attach to the `request` command via your keyboard shortcuts or add a custom comm
 
 ## Getting started
 ### Installation
-Currently, this package is not available via [Package Control][pkg-control]. In the meantime, you can install the script via the following command in the Sublime Text 2 terminal (`ctrl+\``) which utilizes `git clone`.
+Currently, this package is not available via [Package Control][pkg-control]. In the meantime, you can install the script via the following command in the Sublime Text 2 terminal (``ctrl+` ``) which utilizes `git clone`.
 
 ```python
 import os; path=sublime.packages_path(); (os.makedirs(path) if not os.path.exists(path) else None); window.run_command('exec', {'cmd': ['git', 'clone', 'https://github.com/twolfson/sublime-request', 'request'], 'working_dir': path})
@@ -28,7 +28,14 @@ To add your own custom keyboard shortcut:
 3. Inside of the top level `[]`, add the following code
 
 ```json
-{ "keys": ["alt+x"], "command": "request", "args": {"open_args": ["http://google.com/"], "save_to_clipboard": true} }
+{
+  "keys": ["alt+x"],
+  "command": "request",
+  "args": {
+    "open_args": ["http://google.com/"],
+    "save_to_clipboard": true
+  }
+}
 ```
 
 You now have `alt+x` bound to download [http://google.com/][google] to your clipboard.
@@ -51,25 +58,29 @@ You now have `alt+x` bound to download [http://google.com/][google] to your clip
 This is a fact of life. Rather than creating a meta language to be just as simple, I will show you some commmon examples to draw from.
 
 **Using open**
-```json
+```js
 {"open_args": [url, data, timeout]}
 
 // Make GET request to google.com
-{"open_args": ["http://google.com/"]} // url = http://google.com/
+// url = http://google.com/
+{"open_args": ["http://google.com/"]}
 
 // Make POST request to google.com. Switches to POST when data is included
-{"open_args": ["http://google.com", "some=data"] // url = http://google.com/, data = "some=data"
+// url = http://google.com/, data = "some=data"
+{"open_args": ["http://google.com", "some=data"]}
 ```
 
 **Using read**
-```json
+```js
 {"open_args": [buffer_length]}
 
 // Read all of response from request
-{"open_args": ["http://google.com/"]} // buffer_length = null (None in Python)
+// buffer_length = null (None in Python)
+{"open_args": ["http://google.com/"]}
 
 // Read first 100 bytes of response
-{"open_args": ["http://google.com"], "read_args": [100]} // buffer_length = 100
+// buffer_length = 100
+{"open_args": ["http://google.com"], "read_args": [100]}
 ```
 
 ## Examples
@@ -77,13 +88,28 @@ This is a fact of life. Rather than creating a meta language to be just as simpl
 Ping a server via a key binding (requests `http://localhost:3000/` when `alt+x` is pressed.
 
 ```
-{ "keys": ["alt+x"], "command": "request", "args": {"open_args": ["http://localhost:3000/"]} }
+{
+  "keys": ["alt+x"],
+  "command": "request",
+  "args": {
+    "open_args": ["http://localhost:3000/"]
+  }
+}
 ```
 
 ### Grab some Lorem Ipsum
 Copy the first 100 characters of Lorem Ipsum to your clipboard via a key binding, `alt+x`.
+
 ```
-{ "keys": ["alt+x"], "command": "request", "args": {"open_args": ["http://loripsum.net/api/plaintext"], "read_args": [100], "save_to_clipboard": true} }
+{
+  "keys": ["alt+x"],
+  "command": "request",
+  "args": {
+    "open_args": ["http://loripsum.net/api/plaintext"],
+    "read_args": [100],
+    "save_to_clipboard": true
+  }
+}
 ```
 
 ## FAQ
@@ -93,7 +119,13 @@ Copy the first 100 characters of Lorem Ipsum to your clipboard via a key binding
 Here is a key binding that runs `curl` to [http://google.com/][google].
 
 ```json
-{ "keys": ["alt+x"], "command": "exec", "args": {"cmd": ["curl", "http://google.com/"]} }
+{
+  "keys": ["alt+x"],
+  "command": "exec",
+  "args": {
+    "cmd": ["curl", "http://google.com/"]
+  }
+}
 ```
 
 ```sh
