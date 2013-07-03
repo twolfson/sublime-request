@@ -2,7 +2,7 @@
   "schema_version": "1.2",
   "packages": [
     {
-      "name": "request",
+      "name": "Request",
       "description": "Make HTTP requests",
       "author": "Todd Wolfson <todd@twolfson.com>",
       "homepage": "https://github.com/twolfson/sublime-request",
