@@ -8,13 +8,17 @@ Attach to the `request` command via your keyboard shortcuts or add a custom comm
 
 ## Getting started
 ### Installation
-Currently, this package is not available via [Package Control][pkg-control]. In the meantime, you can install the script via the following command in the Sublime Text 2 terminal (``ctrl+` ``) which utilizes `git clone`.
+[Package Control][pkg-control] is a [Sublime Text 2][subl] plugin that allows for easy management of other plugins. This package is available under `Request` inside of [Package Control][pkg-control].
+
+[pkg-control]: http://wbond.net/sublime_packages/package_control
+
+If you prefer the manual route, you can install the script via the following command in the Sublime Text 2 terminal (``ctrl+` ``) which utilizes `git clone`.
 
 ```python
 import os; path=sublime.packages_path(); (os.makedirs(path) if not os.path.exists(path) else None); window.run_command('exec', {'cmd': ['git', 'clone', 'https://github.com/twolfson/sublime-request', 'request'], 'working_dir': path})
 ```
 
-Packages can be uninstalled via "Package Control: Remove Package" via the comand pallete, `ctrl+shift+p` on Windows/Linux, `command+shift+p` on Mac.
+Packages can be uninstalled via "Package Control: Remove Package" via the command pallete, `ctrl+shift+p` on Windows/Linux, `command+shift+p` on Mac.
 
 ### Working with the plugin
 By default, no keyboards shortcuts or commands are added to the command pallete.
