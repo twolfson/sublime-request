@@ -8,7 +8,7 @@ Attach to the `request` command via your keyboard shortcuts or add a custom comm
 
 ## Getting started
 ### Installation
-[Package Control][pkg-control] is a [Sublime Text 2][subl] plugin that allows for easy management of other plugins. This package is available under `Request` inside of [Package Control][pkg-control].
+This package is available under `Request` inside of [Package Control][pkg-control], a [Sublime Text 2][subl] plugin that allows for easy management of other plugins.
 
 [pkg-control]: http://wbond.net/sublime_packages/package_control
 
