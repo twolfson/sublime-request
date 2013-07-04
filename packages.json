@@ -6,12 +6,12 @@
       "description": "Make HTTP requests",
       "author": "Todd Wolfson <todd@twolfson.com>",
       "homepage": "https://github.com/twolfson/sublime-request",
-      "last_modified": "2013-07-03 07:25:09",
+      "last_modified": "2013-07-04 08:56:46",
       "platforms": {
         "*": [
           {
-            "version": "0.2.2",
-            "url": "https://nodeload.github.com/twolfson/sublime-request/zip/0.2.2"
+            "version": "0.2.3",
+            "url": "https://nodeload.github.com/twolfson/sublime-request/zip/0.2.3"
           }
         ]
       }
