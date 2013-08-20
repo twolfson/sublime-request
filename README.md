@@ -1,18 +1,18 @@
 # sublime-request [![Donate on Gittip](http://badgr.co/gittip/twolfson.png)](https://www.gittip.com/twolfson/)
 
-Make HTTP requests from [Sublime Text 2][subl].
+Make HTTP requests from [Sublime Text][subl].
 
 Attach to the `request` command via your keyboard shortcuts or add a custom command pallete to hook into.
 
-[subl]: http://www.sublimetext.com/2
+[subl]: http://www.sublimetext.com/
 
 ## Getting started
 ### Installation
-This package is available under `Request` inside of [Package Control][pkg-control], a [Sublime Text 2][subl] plugin that allows for easy management of other plugins.
+This package is available under `Request` inside of [Package Control][pkg-control], a [Sublime Text][subl] plugin that allows for easy management of other plugins.
 
 [pkg-control]: http://wbond.net/sublime_packages/package_control
 
-If you prefer the manual route, you can install the script via the following command in the Sublime Text 2 terminal (``ctrl+` ``) which utilizes `git clone`.
+If you prefer the manual route, you can install the script via the following command in the Sublime Text terminal (``ctrl+` ``) which utilizes `git clone`.
 
 ```python
 import os; path=sublime.packages_path(); (os.makedirs(path) if not os.path.exists(path) else None); window.run_command('exec', {'cmd': ['git', 'clone', 'https://github.com/twolfson/sublime-request', 'request'], 'working_dir': path})
@@ -118,7 +118,7 @@ Copy the first 100 characters of Lorem Ipsum to your clipboard via a key binding
 
 ## FAQ
 ### I want to see the results of my request.
-[Sublime Text 2][subl] comes default with an `exec` command which runs CLI commands in a panel. There are no official docs to my knowledge but you can find the source code via `Command Pallete -> Browse Packages -> Default/exec.py@class ExecCommand`.
+[Sublime Text][subl] comes default with an `exec` command which runs CLI commands in a panel. There are no official docs to my knowledge but you can find the source code via `Command Pallete -> Browse Packages -> Default/exec.py@class ExecCommand`.
 
 Here is a key binding that runs `curl` to [http://google.com/][google].
 
