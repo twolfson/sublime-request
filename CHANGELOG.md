@@ -1,4 +1,6 @@
 # sublime-request changelog
+0.4.1 - Corrected missing message in `messages.json`
+
 0.4.0 - Moving to Package Control schema 2.0
 
 0.3.0 - Added Sublime Text 3 support
