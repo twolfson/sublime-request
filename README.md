@@ -1,4 +1,4 @@
-# sublime-request [![Donate on Gittip](http://badgr.co/gittip/twolfson.png)](https://www.gittip.com/twolfson/)
+# sublime-request
 
 Make HTTP requests from [Sublime Text][subl].
 
@@ -146,6 +146,14 @@ The document has moved
 </BODY></HTML>
 [Finished in 0.1s]
 ```
+
+## Donating
+Support this project and [others by twolfson][gittip] via [gittip][].
+
+[![Support via Gittip][gittip-badge]][gittip]
+
+[gittip-badge]: https://rawgithub.com/twolfson/gittip-badge/master/dist/gittip.png
+[gittip]: https://www.gittip.com/twolfson/
 
 ## License
 Copyright (c) 2013 Todd Wolfson

@@ -1,6 +1,6 @@
 # sublime-request
 
-Make HTTP requests from Sublime Text 2.
+Make HTTP requests from Sublime Text.
 
 Attach to the `request` command via your keyboard shortcuts or add a custom command pallete to hook into.
 
@@ -102,7 +102,7 @@ Copy the first 100 characters of Lorem Ipsum to your clipboard via a key binding
 
 ## FAQ
 ### I want to see the results of my request.
-[Sublime Text 2][subl] comes default with an `exec` command which runs CLI commands in a panel. There are no official docs to my knowledge but you can find the source code via `Command Pallete -> Browse Packages -> Default/exec.py@class ExecCommand`.
+[Sublime Text][subl] comes default with an `exec` command which runs CLI commands in a panel. There are no official docs to my knowledge but you can find the source code via `Command Pallete -> Browse Packages -> Default/exec.py@class ExecCommand`.
 
 Here is a key binding that runs `curl` to [http://google.com/][google].
 
@@ -131,8 +131,8 @@ The document has moved
 [Finished in 0.1s]
 ```
 
-## Donations
-If you have found this package practical, donations are welcome via [gittip][gittip].
+## Donating
+Support this project and [others by twolfson][gittip] via [gittip][].
 
 [gittip]: https://www.gittip.com/twolfson/
 
