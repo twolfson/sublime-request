@@ -131,11 +131,6 @@ The document has moved
 [Finished in 0.1s]
 ```
 
-## Donating
-Support this project and [others by twolfson][gittip] via [gittip][].
-
-[gittip]: https://www.gittip.com/twolfson/
-
 ## License
 Copyright (c) 2013 Todd Wolfson
 
