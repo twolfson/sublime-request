@@ -1,4 +1,6 @@
 # sublime-request changelog
+0.3.0 - Added Sublime Text 3 support
+
 0.2.3 - Updated `README.md` about using Package Control
 
 0.2.2 - Updated `packages.json` name for proper case in package listing
