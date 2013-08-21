@@ -47,15 +47,16 @@ You now have `alt+x` bound to download [http://google.com/][google] to your clip
 [google]: https://www.google.com/
 
 ## Documentation
-`sublime-request` is written on top of [Python][python]'s [`urllib2`][urllib2] library. We accept the following parameters:
+`sublime-request` is written on top of [Python][python]'s [`urllib2`][urllib2] library ([urllib][] in Sublime Text 3). We accept the following parameters:
 
 [python]: http://python.org/
 [urllib2]: http://docs.python.org/2/library/urllib2.html
+[urllib]: http://docs.python.org/3.3/library/urllib.html
 
-- `open_args` - List of arguments to pass to `urllib2.urlopen`
-- `open_kwargs` - Dictionary of keyword arguments to pass to `urllib2.urlopen`
-- `read_args` - List of arguments to pass to `urllib2.urlopen`
-- `read_kwargs` - Dictionary of keyword arguments to pass to `urllib2.urlopen`
+- `open_args` - List of arguments to pass to `urllib2.urlopen`/`urllib.request.urlopen`
+- `open_kwargs` - Dictionary of keyword arguments to pass to `urllib2.urlopen`/`urllib.request.urlopen`
+- `read_args` - List of arguments to pass to `request.read`
+- `read_kwargs` - Dictionary of keyword arguments to pass to `request.read`
 - `save_to_clipboard` - Copies result from `read` to clipboard
 
 ### I don't know Python
@@ -76,7 +77,7 @@ This is a fact of life. Rather than creating a meta language to be just as simpl
 
 **Using read**
 ```js
-{"open_args": [buffer_length]}
+{"read_args": [buffer_length]}
 
 // Read all of response from request
 // buffer_length = null (None in Python)
