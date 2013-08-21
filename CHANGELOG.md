@@ -1,4 +1,6 @@
 # sublime-request changelog
+0.4.2 - Corrections to README and install.md
+
 0.4.1 - Corrected missing message in `messages.json`
 
 0.4.0 - Moving to Package Control schema 2.0
