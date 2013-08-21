@@ -1,4 +1,6 @@
 # sublime-request changelog
+0.5.0 - Removed `packages.json` to move fully to Package Control
+
 0.4.2 - Corrections to README and install.md
 
 0.4.1 - Corrected missing message in `messages.json`
