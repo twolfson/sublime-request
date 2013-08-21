@@ -1,1 +1,1 @@
-ln -s $PWD ~/.config/sublime-text-2/Packages/request
+ln -s $PWD ~/.config/sublime-text-2/Packages/Request
